@@ -2,5 +2,5 @@ from django.shortcuts import render
 from django.http import HttpResponse
 # Create your views here.
 
-def index(reponse):
-    return HttpResponse ("<h1>Welcome to my app</h1>")
+def index(reponse, id):
+    return HttpResponse ("<h1>%s</h1>" % id)
