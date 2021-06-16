@@ -12,24 +12,25 @@
 			background-color:#111;
 			overflow-x: :hidden;
 			padding-top:20px;
-		}    
+			}    
 
-                .sidenav a {
-			padding:6px 8px 6px 16px;
-			text-decoration: none;
-			font-size:25px;
-			color: #818181;
-			display:block;
-		}  
+            .sidenav a {
+				padding:6px 8px 6px 16px;
+				text-decoration: none;
+				font-size:25px;
+				color: #818181;
+				display:block;
+				}  
   
-                .sidenav a:hover{
-			color:#FFA500;
-		}     
+            .sidenav a:hover{
+				color:#FFA500;
+			}     
 
-                .main{
-			margin-left:160px;
-			padding: 0px 10px;
-		}   
+            .main{
+				margin-left:160px;
+				padding: 0px 10px;
+			}
+			
     </style>
  
 	<meta charset="utf-8">
@@ -38,7 +39,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
 	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
  
-	<title>{% block title %}Artem's Site{% endblock %}</title>
+	<title>{% block title %}Artems Site{% endblock %}</title>
 </head>
  
 <body>
@@ -51,7 +52,7 @@
 	<div id="content" name="content" class="main">
 		<div class="row justify-content-center">
 			<div class="col-10">
-				<h1 class="mt-2">My Site</h1>
+				<h1 class="mt-2">Keep Your Lists Organized</h1>
 				<hr class="mt-0 mb-4">
 				{% block content %}
 				{% endblock %}

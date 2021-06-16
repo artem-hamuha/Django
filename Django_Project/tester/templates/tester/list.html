@@ -7,8 +7,8 @@
 		{% csrf_token %}
 		{% for item in ls.item_set.all %}
 		<div class="input-group mb-3">
-			<div class="input-group-prepend">
-				<div class="input-group-text">
+            <div class="input-group-prepend">
+			    <div class="input-group-text">
 					{% if item.complete == True %}
 						<input type="checkbox" value="clicked" name="c{{item.id}}" checked>
 					{% else %}
@@ -26,7 +26,7 @@
 			</div>
 			<input type="text" name="new">
 		</div>
- 
-		<button type="submit" name="save" value="save" class="btn btn-success">Save</button>
+        <button type="submit" name="save" value="save" class="btn btn-success">Save</button>
+		
 	</form>
 {% endblock %}
